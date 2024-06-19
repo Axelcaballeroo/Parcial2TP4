@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaMaestra.master.cs" Inherits="Parcial2.PaginaMaestra" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link href="styles.css" rel="stylesheet" />
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .menu {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            font-weight: bold;
+            background-color: #333333;
+            color: #FFFFFF;
+            text-align: center;
+            border-style: none none double none;
+            border-color: #FFFFFF;
+        }
+        .nuevoEstilo1 {
+            background-color: #000000;
+            text-align: center;
+            font-family: "Arial Black";
+            font-size: medium;
+            font-weight: bold;
+            color: #FFFFFF;
+        }
+        .nuevoEstilo2 {
+            font-style: normal;
+            text-decoration: none;
+        }
+        .nuevoEstilo3 {
+            text-decoration: none;
+        }
+        .nuevoEstilo4 {
+            text-decoration: none;
+        }
+        .nuevoEstilo5 {
+            text-decoration: none;
+        }
+        .nuevoEstilo6 {
+            font-size: large;
+            font-family: Arial;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: none;
+            color: #FFFFFF;
+            text-align: center;
+            background-color: #808080;
+            border-bottom-style: double;
+            border-bottom-color: #000000;
+        }
+        .nuevoEstilo7 {
+            font-family: "Arial Black";
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="nuevoEstilo6" id="navbar">
+                
+                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Inicio.aspx" CssClass="nuevoEstilo7">INICIO</asp:HyperLink> 
+                &nbsp; 
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Registros.aspx" CssClass="nuevoEstilo7">REGISTRO</asp:HyperLink>
+                &nbsp;
+                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/SubirDescargar.aspx" CssClass="nuevoEstilo7">SUBIR/DESCARGAR ARCHIVOS</asp:HyperLink>
+                
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div id="footer" class="nuevoEstilo1">
+                Parcial creado por Axel Caballero - TP4 - 2024</div>
+        </div>
+    </form>
+    <p class="nuevoEstilo5">
+    </p>
+</body>
+</html>
